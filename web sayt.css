@@ -1,0 +1,1239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 255, 213);
+}
+
+
+
+
+
+@keyframes hr {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 500px;
+        width: 10px;
+    }
+}
+.hr {
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(200, 200, 200));
+    width: 800px;
+    margin: 0 auto;
+    animation-name: hr;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-direction: alternate;
+}
+.hr hr:not([size]) {
+    height: 4px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-------- HEADER --------*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 15;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 10px 0;
+}
+nav .nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#check {
+    display: none;
+}
+.checkBtn {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.logo {
+    position: relative;
+    text-decoration: none;
+    z-index: 50;
+}
+.logo h1 {
+    font-size: 45px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo span {
+    font-size: 34px;
+    color: #ffa200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-item .nav-link {
+    display: flex;
+    font-size: 13px;
+    font-weight: 450;
+    color: #ffa200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.4s;
+    margin-right: 30px;
+}
+.nav-item .nav-link:hover {
+    margin-top: -7px;
+    color: #000;
+}
+.nav-item .active{
+    margin-top: -7px;
+    color: #000;
+}
+.nav-item .active::after {
+    width: 100%;
+}
+
+
+/*-------- HOME --------*/
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+    background: url(./image/home.bg.jpg) no-repeat fixed center;
+    background-size: cover;
+    box-shadow: 2px 4px 12px rgb(138, 138, 138);
+    z-index: 10;
+}
+.angle__top {
+    padding: 10px 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 5;
+    background-color: rgb(71, 133, 234);
+    transition: all 0.7s ease;
+}
+.angle__top a svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+    transition: all 0.7s ease;
+}
+.angle__top__animation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 100px;
+    z-index: 30;
+}
+.angle__top__animation svg {
+    width: 20px;
+    height: 20px;
+    color: transparent;
+}
+.angle__top:hover .angle__top__animation svg:first-child {
+    animation: angle__top linear 2s infinite;
+    animation-delay: 3s;
+}
+.angle__top:hover .angle__top__animation svg:nth-child(2) {
+    animation: angle__top linear 1.8s infinite;
+    animation-delay: 2s;
+}
+.angle__top:hover .angle__top__animation svg:nth-child(3) {
+    animation: angle__top linear 1.6s infinite;
+    animation-delay: 1s;
+}
+@keyframes angle__top {
+    0% {
+        color: rgb(71, 133, 234);
+    }
+    25% {
+        color: rgb(71, 133, 234);
+    }
+    50% {
+        color: rgb(71, 133, 234);
+    }
+    100% {
+        
+    }
+}
+.home__icon {
+    display: flex;
+    align-items: center;
+}
+.ismim {
+    display: flex;
+    margin-right: 20rem;
+    flex-flow: column;
+}
+.ismim h4 {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ismim h5 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.animation__name {
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+.animation__name h1 {
+    color: #123858;
+    font-size: 55px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.animation__name span {
+    color: #ffa200;
+}
+.junior__dev {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.web__designer {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 0;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.animation__name h1:nth-child(1) {
+    animation: animation__name 15s infinite;
+}
+@keyframes animation__name {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -75px;
+    }
+    50% {
+        margin-top: -130px;
+    }
+    75% {
+        margin-top: -75px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+.agnle__bottom {
+    position: absolute;
+    bottom: 25px;
+}
+.agnle__bottom a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.agnle__bottom a svg {
+    animation: scroll linear 2s infinite;
+}
+.agnle__bottom a svg:hover {
+    color: #ffa200;
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+
+
+/*-------- ABOUT ME --------*/
+.about {
+    margin: 100px 0;
+    flex-flow: column;
+    text-align: center !important;
+}
+.about__text {
+    display: flex;
+    flex-flow: column;
+}
+.about__title {
+    display: flex;
+    margin-bottom: 70px;
+}
+.about__title h1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center !important;
+    position: relative;
+}
+.about__title h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(to right, #fff877, orange);
+    width: 70%;
+    height: 4px;
+    transition: all 1s;
+}
+.about__title h1:hover::after {
+    width: 120%;
+}
+.about__items {
+    flex-direction: row-reverse;
+    justify-content: center !important;
+    margin-top: 100px;
+}
+.about__item__img  {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    align-items: center;
+    margin-right: 70px;
+    border: 5px solid #01cafe;
+}
+.about__item__img img {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 250px;
+    height: 350px;
+    transition: all 2s ease;
+}
+.about__item__paragraph {
+    text-align: left;
+}
+.about__item__paragraph h4 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about__item__paragraph span {
+    color: rgb(166, 6, 210);
+}
+.about__item__paragraph p {
+    color: #4f4f4fdb;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* Card */
+
+.card__items {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.first__card, .second__card {
+    margin-right: 50px;
+}
+.about__card__item { 
+    width: 250px;
+    max-height: 200px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    transition: all 0.8s;
+    box-shadow: 0 0 15px 0 rgb(68 88 144 / 20%);
+    overflow: hidden;
+}
+.about__card__item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: all 0.8s;
+    z-index: -1;
+}
+.about__card__item:hover::before { 
+    background-color: #67b0d1;
+    height: 100%;
+}
+
+
+.about__card__body {
+    margin-top: 50px;
+}
+.about__card__item:hover {
+    transform: translateY(0);
+    max-height: 350px;
+}
+.about__card__item i {
+    position: relative;
+    font-size:  95px;
+    color: #67b0d1;
+    cursor: pointer;
+}
+.about__card__item:hover i { 
+    color: white;
+}
+.about__card__h4 {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card_paragrap {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 20px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*-------- Edugation --------*/
+.school {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-flow: column;
+}
+
+.skills__item__education {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.skills__education {
+    display: flex;
+    flex-flow: column;
+    margin-right: 50px;
+}
+.education__title, .developer__title {
+    margin-bottom: 20px;
+}
+.education__title, .developer__title {
+    display: flex;
+    align-items: center;
+}
+.education__title:hover i,
+.developer__title:hover i {
+    color: white;
+    background-color: #67b0d1;
+    border: 5px;
+    box-shadow: 0 0 10px 2px #a5e2fd;
+}
+.education__title i, .developer__title i { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(43, 5, 61);
+    font-size: 22px;
+    margin-right: 10px;
+    border: 2px dashed #67b0d1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.education__title h1 , .developer__title h1 {
+    color: rgb(43, 5, 61);
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.education__paraghrap p, .developer__paraghrap p {
+    color: #6a6a73d9;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.skills {
+    padding-top: 100px;
+    flex-flow: column;
+    text-align: center !important;
+}
+.skills__title h1 {
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center !important;
+    position: relative;
+}
+.skills__title h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(to right, #fff877, orange);
+    width: 70%;
+    height: 4px;
+    transition: all 1s;
+}
+.skills__title h1:hover::after {
+    width: 120%;
+}
+.skills__item {
+    display: flex;
+    flex-flow: column;
+    padding: 30px 30px;
+    width: 400px;
+    background-color: white;
+    border: 2px dashed #67b0d1;
+}
+.skills__hr {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px dashed #67b0d1;
+    width: 100%;
+}
+.html__skill__item {
+    margin: 0 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.js__skill__item {
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+    margin: 0 0;
+    margin-top: 30px;
+}
+.css__skill__item, .bootstrap__skill__item, .github__skill__item {
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
+}
+.skill__item__header__and__body {
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+}
+.skills__item__icon {
+    margin-right: 30px;
+}
+.skills__item__icon i {
+    font-size: 40px;
+}
+.html__skills__icon i {
+    color: orange;
+}
+.css__skills__icon i {
+    color: blue;
+}
+.bootstrap__skills__icon i {
+    color: rgb(136, 0, 255);
+}
+.github__skills__icon i {
+    color: #000;
+}
+.js__skills__icon i {
+    color: yellow;
+}
+.html__skill__header, .css__skill__header, 
+.bootstrap__skill__header, .github__skill__header, .js__skill__header {
+    display: flex;
+    justify-content: space-between;
+}
+.skills__item__header h6 {
+    color: black;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.html__skills__body, .css__skills__body, .bootsrap__skills__body, .github__skills__body,
+.js__skills__body {
+    width: 100%;
+    background-color: #c3ddf5;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.html__skills__body::before,
+.css__skills__body::before,
+.bootsrap__skills__body::before,
+.github__skills__body::before,
+.js__skills__body::before {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: #084177;
+    top: 0;
+    left: 0;
+    animation: skills__animation 7s 1 forwards;
+}
+@keyframes skills__animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes skills__animation__css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 73%;
+    }
+}
+@keyframes skills__animation__bootsrap {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes skills__animation__github {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes skills__animation__js {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 15%;
+    }
+}
+.css__skills__body::before {
+    width: 73%;
+    animation: skills__animation__css 7s 1 forwards;
+}
+.bootsrap__skills__body::before {
+    width: 90%;
+    animation: skills__animation__bootsrap 7s 1 forwards;
+}
+.github__skills__body::before {
+    width: 80%;
+    animation: skills__animation__github 7s 1 forwards;
+}
+.js__skills__body::before {
+    width: 15%;
+    animation: skills__animation__js 7s 1 forwards;
+}
+
+
+
+
+/* Teacher */
+.teacher__item {
+    display: flex;
+    flex-flow: column;
+    margin-top: 100px;
+}
+.teacher__item__title h1 {
+    font-size: 30px;
+    color: rgb(43, 5, 61);
+    padding-left: 40px;
+    margin-bottom: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.teacher__items__card {
+    display: flex;
+    justify-content: center;
+}
+.first__teacher__item, .second__teacher__item, .three__teacher__item {
+    width: 280px;
+    box-shadow: 0px 2px 12px rgb(36, 36, 36);
+    transition: all 1s ease;
+    margin-right: 50px;
+    border-radius: 14px;
+}
+.three__teacher__item {
+    margin-right: 0;
+}
+.first__teacher__item:hover,
+.second__teacher__item:hover,
+.three__teacher__item:hover {
+    transform: translateY(-15px);
+}
+.first__teacher__item__p p, .second__teacher__item__p p {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    margin: 12px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.first__teacher__item__img img {
+    width: 100%;
+    border-radius: 14px;
+    height: 350px;
+}
+.second__teacher__item__img img {
+    width: 100%;
+    border-radius: 14px;
+    height: 350px;
+}
+
+.teacher__img img {
+    position: relative;
+    height: 350px;
+}
+.teacher__overlay {
+    position: absolute;
+    border-radius: 14px;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+.teacher__overlay a {
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.teacher__overlay a h1 {
+    color: white;
+    font-size: 120px;
+    font-weight: 50;
+}
+.teacher__img:hover  .teacher__overlay {
+    background-color: #123958a8;
+    height: 350px;
+}
+.teacher__img:hover .teacher__overlay a {
+    display: inline-block;
+}
+
+
+/*-------- PORTFOLIO --------*/
+.portfolio {
+    flex-flow: column;
+    text-align: center !important;
+    margin-bottom: 100px;
+    position: relative;
+}
+.portfolio__title__bg {
+    position: absolute;
+    background: linear-gradient(to right, #01cafe, #ffffff00);
+    width: 100%;
+    height: 500px;
+    top: 0;
+    z-index: -1;
+}
+.portfolio__title h1 { 
+    margin: 100px auto;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    position: relative;
+}
+.portfolio__title h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(to right, #fff877, orange);
+    width: 70%;
+    height: 4px;
+    transition: all 1s;
+}
+.portfolio__row {
+    display: flex;
+    justify-content: center;
+}
+.portfolio__row__first {
+    margin-bottom: 50px;
+}
+.portfolio__title h1:hover::after {
+    width: 120%;
+}
+.portfolio__link {
+    margin-bottom: 50px;
+}
+.portfolio__link a {
+    margin-right: 21px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 22px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.portfolio__link a:hover {
+    background-color: rgba(0, 17, 255, 0.321);
+    color: rgb(255, 255, 255);
+}
+.portfolio__img {
+    position: relative;
+    flex-flow: column;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+.overlay__item {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.overlay__item:hover .portfolio__overlay__linkedin {
+    bottom: 80px;
+}
+.overlay__item:hover .portfolio__overlay__title {
+    bottom: 30px;
+}
+.portfolio__overlay__linkedin {
+    display: flex;
+    position: absolute;
+    bottom: -50%;
+    transition: all 0.7s ease;
+    left: 30px;
+}
+.portfolio__overlay__title {
+    position: absolute;
+    bottom: -50%;
+    left: 30px;
+    transition: all 1.4s ease;
+    font-size: 22px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.portfolio__website__link {
+    margin-right: 20px;
+}
+.portfolio__website__link, .portfolio__sign__in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.526);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.overlay__item a i {
+    color: white;
+    font-size: 17px;
+}
+.portfolio__first__website:hover .overlay,
+.portfolio__second__website:hover .overlay,
+.portfolio__three__website:hover .overlay,
+.portfolio__four__website:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.769);
+}
+.portfolio__first__website:hover .overlay__item,
+.portfolio__second__website:hover .overlay__item,
+.portfolio__three__website:hover .overlay__item,
+.portfolio__four__website:hover .overlay__item {
+    display: flex;
+}
+.website__item {
+    transition: all 1s ease-in;
+    width: 400px;
+    box-shadow: 0 0 20px rgb(131, 131, 131);
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio__first__website, .portfolio__three__website {
+    margin-right: 50px;
+}
+.portfolio__first__website img, .portfolio__second__website img, 
+.portfolio__three__website img, .portfolio__four__website img {
+    width: 100%;
+    height: 270px;
+}
+.portfolio__four__website {
+    margin-right: 0;
+}
+
+
+/*-------- FOOTER --------*/
+.contact {
+    flex-flow: column;
+    text-align: center !important;
+    background-color: #000;
+    padding-bottom: 100px;
+}
+
+.contact__title h1 {
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 100px auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+.contact__title h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(to right, #fff877, orange);
+    width: 70%;
+    height: 4px;
+    transition: all 1s;
+}
+.contact__title h1:hover::after {
+    width: 120%;
+}
+.contact__card {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-right: 50px;
+}
+.contact__card__and__form {
+    display: flex;
+    justify-content: center;
+}
+.first__contact__card__row {
+    display: flex;
+    margin-bottom: 50px;
+}
+.second__contact__card__row {
+    display: flex;
+}
+.contact__phon__card, .contact__addres__card {
+    margin-right: 50px;
+}
+.contact__website__card {
+    margin-right: 0;
+}
+.contact__email__card {
+    margin-right: 0;
+}
+.contact__phon__card, .contact__email__card, .contact__addres__card,
+.contact__website__card {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    border-top: 2px solid #074888;
+    border-left: 2px solid #074888;
+    border-bottom: 1px solid #0747884b;
+    border-right: 1px solid #0747882d;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 160px;
+    background: linear-gradient(130deg, rgba(49, 110, 170, 0.527), rgba(48, 108, 168, 0));
+}
+.contact__phon__card:hover,
+.contact__email__card:hover,
+.contact__addres__card:hover,
+.contact__website__card:hover {
+    border-width: 1px;
+    background: linear-gradient(130deg, rgba(48, 108, 168, 0) 70%, rgba(0, 128, 255, 0.727));
+    color: #062d53 !important;
+    border-bottom: 0;
+    border-right: 0;
+}
+.contact__phon__card:hover .contact__phon__card__icon, 
+.contact__email__card:hover .contact__email__card__icon,
+.contact__addres__card:hover .contact__addres__card__icon,
+.contact__website__card:hover .contact__website__card__icon {
+    transform: rotate(20deg);
+}
+.contact__phon__card__icon::before, .contact__email__card__icon::before,
+.contact__addres__card__icon::before, .contact__website__card__icon::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 7px;
+    top: -4px;
+    left: -30%;
+    z-index: -1;
+    transform: rotate(-20deg);
+}
+.contact__phon__card__icon::before {
+    background-color: rgb(13, 225, 126);
+}
+.contact__email__card__icon::before {
+    background-color: orange;
+}
+.contact__addres__card__icon::before {
+    background-color: blue;
+}
+.contact__website__card__icon::before {
+    background-color: gray;
+}
+.contact__phon__card__icon {
+    background: linear-gradient(to right, rgb(13, 225, 126) 45%, rgb(13, 225, 126, 0.7));
+}
+.contact__email__card__icon {
+    background: linear-gradient(to right, orange 45%, rgba(255, 166, 0, 0.7));
+}
+.contact__addres__card__icon {
+    background: linear-gradient(to right, blue 45%, rgba(0, 0, 255, 0.7));
+}
+.contact__website__card__icon {
+    background: linear-gradient(to right, gray 45%, rgba(128, 128, 128, 0.7));
+}
+.contact__phon__card__icon, .contact__email__card__icon, .contact__addres__card__icon,
+.contact__website__card__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s ease;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 7px;
+    position: relative;
+}
+.contact__phon__card__icon i, .contact__email__card__icon i , 
+.contact__addres__card__icon i, .contact__website__card__icon i {
+    color: white;
+}
+.contact__card__item__title h3 {
+    color: #fff;
+    margin: 5px 0;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.contact__phon__card__numbers a, .contact__email__card__numbers a,
+.contact__addres__card__numbers a, .contact__website__card__numbers a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 90px;
+    width: 300px;
+    background-color: white;
+    border-top: 2px solid #074888;
+    border-left: 2px solid #074888;
+    border-bottom: 1px solid #0747884b;
+    border-right: 1px solid #0747882d;
+}
+.contact__form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 0 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+.contact__form form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.name__input, .email__input, .password__input {
+    position: relative;
+    margin-bottom: 20px;
+}
+.name__input input, .email__input input, .password__input input {
+    border: none;
+    outline: none;  
+    font-size: 18px;
+    font-weight: 250;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    transition: all 1s ease;
+    position: relative;
+    left: 0;
+    margin: 6px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.name__input label, .email__input label, .password__input label {
+    position: absolute;
+    top: 7px;
+    transition: all 1s ease;
+    left: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 300;
+}
+.contact__form__item input:focus ~ label {
+    margin-top: -12px;
+    color: red;
+    font-size: 11px;
+}
+.contact__form__item input:valid ~ label {
+    margin-top: -12px;
+    color: #119d52;
+    font-size: 11px;
+}
+.contact__form__item input:focus {
+    border-bottom: 1px solid red;
+}
+.contact__form__item input:valid {
+    border-bottom: 1px solid #119d52;
+}
+.contact__form__btn {
+    border: none;
+    outline: none;
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(to right, #01cafe, rgb(57, 57, 255));
+    position: relative;
+    box-shadow: 0 0 20px #797979;
+    margin-top: 20px;
+}
+.contact__form__btn a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+}
+.contact__form__btn::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(4, 4, 184);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 95%;
+    transition: all 1s;
+}
+.contact__form__btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 0 0;
+}
+.contact__form__btn:hover::before {
+    width: 100%;
+}
+
+/*-------- GOODBYE --------*/
+
+.goodbye {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #074888;
+    height: 300px;
+}
+.goodbye__logotiv h1 a {
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.goodbye__logotiv span {
+    font-size: 34px;
+    color: #ffa200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.website__map {
+    display: flex;
+    margin: 40px 0;
+}
+.website__map a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+.website__map a:last-child {
+    margin-right: 0;
+}
+.website__map a:hover {
+    color: black;
+}
+.admin__icon {
+    display: flex;
+    background-color: white;
+    padding: 20px 20px;
+}
+.admin__icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin-right: 35px;
+}
+.admin__icon a:last-child {
+    margin-right: 0;
+}

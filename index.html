@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sardorbek Olimov - Portfolio</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="web sayt.css" />
+  <link rel="stylesheet" href="index__media.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!---------- Header ------------>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <h1>
+          <i>S.<span>OLimov</span></i>
+        </h1>
+      </a>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </label>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active">Bosh sahifa</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">Men haqimda</a>
+        </li>
+        <li class="nav-item ovarlay__skills__nav">
+          <a href="#skills" class="nav-link">Tajriba</a>
+        </li>
+        <li class="angle__dropdown"></li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" style="margin-right: 0;">Aloqa</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!---------- HOME ---------->
+  <section>
+    <div class="home" id="home">
+      <div class="ismim">
+        <h4>Salom!</h4>
+        <div class="animation__name">
+          <h1>Sardorbek<span class="span__name"> Olimov</span></h1>
+          <h3 class="junior__dev">Junior (Dasturchi)</h3>
+          <h3 class="web__designer">Web designer</h3>
+        </div>
+        <h5>Frontend Developer</h5>
+      </div>
+      <div class="agnle__bottom">
+        <a href="#about">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="currentColor" class="bi bi-arrow-down"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+    <div class="angle__top">
+      <a href="#home">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up"
+          class="svg-inline--fa fa-chevron-up " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z">
+          </path>
+        </svg>
+      </a>
+      <div class="angle__top__animation">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up"
+          class="svg-inline--fa fa-chevron-up " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z">
+          </path>
+        </svg>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up"
+          class="svg-inline--fa fa-chevron-up " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z">
+          </path>
+        </svg>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up"
+          class="svg-inline--fa fa-chevron-up " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z">
+          </path>
+        </svg>
+      </div>
+    </div>
+  <!---------- About me --------->
+  <section>
+    <div class="about flex" id="about">
+
+      <div class="about__items flex">
+        <div class="about__text">
+          <div class="about__title">
+            <h1>Men haqimda</h1>
+          </div>
+          <div class="about__item__paragraph">
+            <h4>Frontend <span>Developer</span> & <span>designer</span></h4>
+            <p>
+              Assalomu aleykum! Mening ismim Sardorbek Olimov. <br />
+              Biz oilada to'rt kishi bo'lib yashaymiz. Dadam, oyim, <br />
+              akam va men. Dadam o'qituvchi bo'lib ishlaydilar.<br />
+              Oyim uy bekasi, akam studentlar. Bu portfolioda siz <br />
+              men haqimda qisqacha ma'lumotga ega bo'lishingiz <br />
+              mumkin... <br />
+            </p>
+          </div>
+        </div>
+        <div class="about__item__img flex">
+          <img src="./image/sardorbek.2007.jpg" />
+        </div>
+      </div>
+
+      <div class="card__items">
+
+        <div class="first__card about__card__item">
+          <i class="fa-solid fa-palette"></i>
+          <div class="about__card__body">
+            <h4 class="card-ikki-1__h4 about__card__h4">Veb Dizayn</h4>
+            <p class="card_paragrap">
+              Biz sizning vebsaytingizni di - <br />
+              zaynini siz xohlagan ko'rinishda<br />
+              yaratib beramiz<br />
+            </p>
+          </div>
+        </div>
+        <div class="second__card about__card__item">
+          <i class="fas fa-laptop-code"></i>
+          <div class="about__card__body">
+            <h4 class="card-bir__h4 about__card__h4">Web-Sayt</h4>
+            <p class="card_paragrap">
+              Biz siz xohlagan yo'nalishdagi<br />
+              vebsaytlarning Frontend qismini <br />
+              yaratib beramiz<br />
+            </p>
+          </div>
+        </div>
+        <div class="three__card about__card__item">
+          <i class="fab fa-android flex"></i>
+          <div class="about__card__body">
+            <h4 class="card-ikki-2__h4 about__card__h4">Responsive</h4>
+            <p class="card_paragrap">
+              Biz sizga vebsaytingizni<br />
+              Responsive qilib yaratib bera<br />
+              olamiz<br />
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-----------  Hr -------------->
+  <div class="hr">
+    <hr />
+  </div>
+
+  <!---------- Skills ------------>
+  <section>
+    <div class="school">
+
+
+
+      <div id="skills" class="skills flex">
+        <div class="skills__title">
+          <h1>Tajriba</h1>
+        </div>
+        <div class="skills__item__education">
+          <div class="skills__education">
+            <div class="education__school">
+              <div class="education__title">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h1>Maktab</h1>
+              </div>
+              <div class="education__paraghrap">
+                <p> Assalomu alaykum! Men 7-sonli umumiy o'rta ta'lim<br>
+                  maktabining 8-sinfda o'qiyman. Menga matematika,<br>
+                  fizika, ingliz tili va informatika fanlari juda yoqadi.<br>
+                  <br>
+                </p>
+              </div>
+            </div>
+            <div class="developer__school">
+              <div class="developer__title">
+                <i class="fa-solid fa-code"></i>
+                <h1>Dasturlash</h1>
+              </div>
+              <div class="education__paraghrap">
+                <p> Meni dasturlashga qiziqishimiz bo'lgani uchun juda erta<br>
+                  ya'ni 14 yoshimdan boshlaganman. Men 2021-yil auvgust <br>
+                  oyidan buyon dasturlash bilan shug'ullanib kelmoqdaman.<br>
+                  Html, css va bootstrap tillarini to'liq yakunlaganman. Hozir<br>
+                  javascript tilini o'rganib kelmoqdaman.<br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="html__skill__item">
+              <div class="html__skills__icon skills__item__icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill__item__header__and__body">
+                <div class="html__skill__header skills__item__header">
+                  <h6>HTML</h6>
+                  <h6>100%</h6>
+                </div>
+                <div class="html__skills__body"></div>
+              </div>
+            </div>
+            <div class="skills__hr"></div>
+            <div class="css__skill__item">
+              <div class="css__skills__icon skills__item__icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill__item__header__and__body">
+                <div class="css__skill__header skills__item__header">
+                  <h6>CSS</h6>
+                  <h6>73%</h6>
+                </div>
+                <div class="css__skills__body"></div>
+              </div>
+            </div>
+
+            <div class="skills__hr"></div>
+            <div class="bootstrap__skill__item">
+              <div class="bootstrap__skills__icon skills__item__icon">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="skill__item__header__and__body">
+                <div class="bootstrap__skill__header skills__item__header">
+                  <h6>BOOTSTRAP</h6>
+                  <h6>90%</h6>
+                </div>
+                <div class="bootsrap__skills__body"></div>
+              </div>
+            </div>
+
+            <div class="skills__hr"></div>
+            <div class="github__skill__item">
+              <div class="github__skills__icon skills__item__icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="skill__item__header__and__body">
+                <div class="github__skill__header skills__item__header">
+                  <h6>GITHUB</h6>
+                  <h6>80%</h6>
+                </div>
+                <div class="github__skills__body"></div>
+              </div>
+            </div>
+
+            <div class="skills__hr"></div>
+            <div class="js__skill__item">
+              <div class="js__skills__icon skills__item__icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill__item__header__and__body">
+                <div class="js__skill__header skills__item__header">
+                  <h6>JAVASCRIPT</h6>
+                  <h6>15%</h6>
+                </div>
+                <div class="js__skills__body"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="teacher__item">
+        <div class="teacher__item__title">
+          <h1>Ustozlar</h1>
+        </div>
+        <div class="teacher__items__card">
+          <div class="first__teacher__item">
+            <div class="first__teacher__item__img teacher__img">
+              <img src="./image/ulugbek.jpg" />
+              <div class="teacher__overlay">
+                <a href="#">
+                  <h1>+</h1>
+                </a>
+              </div>
+            </div>
+            <div class="first__teacher__item__p">
+              <p>Ulug'bek Samigjonov<br /></p>
+            </div>
+          </div>
+          <div class="second__teacher__item">
+            <div class="second__teacher__item__img teacher__img">
+              <img src="./image/suratov.img1.jpg" />
+              <div class="teacher__overlay">
+                <a href="#">
+                  <h1>+</h1>
+                </a>
+              </div>
+            </div>
+            <div class="second__teacher__item__p">
+              <p>Muhammadjavohir Suratov<br /></p>
+            </div>
+          </div>
+          <div class="three__teacher__item">
+            <div class="second__teacher__item__img teacher__img">
+              <img src="./image/diyorbek.webp" />
+              <div class="teacher__overlay">
+                <a href="https://github.com/diyorbek0309" target="blank">
+                  <h1>+</h1>
+                </a>
+              </div>
+            </div>
+            <div class="second__teacher__item__p">
+              <p>Diyorbek Olimov<br /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------- Portfolio ----------->
+  <section>
+    <div class="portfolio flex" id="portfolio">
+      <div class="portfolio__title__bg"></div>
+      <div class="portfolio__title">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="portfolio__link flex">
+        <a href="#">Hammasi </a>
+        <a href="#">Veb sayt</a>
+        <a href="#" style="margin-right: 0">Portfolio</a>
+      </div>
+      <div class="portfolio__img flex">
+
+
+        <div class="portfolio__row__first portfolio__row">
+
+          <div class="portfolio__first__website website__item">
+            <img src="./image/first__website.jpg" />
+            <div class="overlay">
+              <div class="overlay__item">
+                <h4 class="portfolio__overlay__title">
+                  Sardorbek Olimov - Portfolio
+                </h4>
+                <div class="portfolio__overlay__linkedin">
+                  <a class="portfolio__website__link" href="index.html">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a class="portfolio__sign__in" href="index.html">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__second__website website__item">
+            <img src="./image/second__website.png" />
+            <div class="overlay">
+              <div class="overlay__item">
+                <h4 class="portfolio__overlay__title">
+                  Web Developer.uz
+                </h4>
+                <div class="portfolio__overlay__linkedin">
+                  <a class="portfolio__website__link" href="http://web-kurslar.netlify.app/" target="blank">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a class="portfolio__sign__in" href="http://web-kurslar.netlify.app/" target="blank">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="portfolio__row__second portfolio__row">
+
+          <div class="portfolio__three__website flex website__item">
+            <img src="./image/fourth__website.png" />
+            <div class="overlay">
+              <div class="overlay__item">
+                <h4 class="portfolio__overlay__title">
+                  MyHome.uz
+                </h4>
+                <div class="portfolio__overlay__linkedin">
+                  <a class="portfolio__website__link" href="index.html">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a class="portfolio__sign__in" href="index.html">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__four__website flex website__item">
+            <img src="./image/threeth__website.png" />
+            <div class="overlay">
+              <div class="overlay__item">
+                <h4 class="portfolio__overlay__title">
+                  Sardorbek Olimov - Portfolio
+                </h4>
+                <div class="portfolio__overlay__linkedin">
+                  <a class="portfolio__website__link" href="index.html">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a class="portfolio__sign__in" href="index.html">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!---------- Footer ------------>
+  <footer>
+
+
+    <div id="contact" class="contact flex">
+      <div class="contact__title">
+        <h1>Aloqa</h1>
+      </div>
+      <div class="contact__card__and__form">
+
+        <div class="contact__card">
+
+          <div class="first__contact__card__row">
+
+            <div class="contact__phon__card">
+              <div class="contact__phon__card__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact__phon__card__numbers">
+                <div class="contact__phon__card__title contact__card__item__title">
+                  <h3>Telefon</h3>
+                </div>
+                <a href="#"> +998 99 347 7826 </a>
+              </div>
+            </div>
+
+            <div class="contact__email__card">
+              <div class="contact__email__card__icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact__email__card__numbers">
+                <div class="contact__email__card__title contact__card__item__title">
+                  <h3>Email</h3>
+                </div>
+                <a href="#"> sardorbek0731@gmail.com </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="second__contact__card__row">
+
+            <div class="contact__addres__card">
+              <div class="contact__addres__card__icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact__addres__card__numbers">
+                <div class="contact__addres__card__title contact__card__item__title">
+                  <h3>Manzil</h3>
+                </div>
+                <a href="#"> Matonat ko'chasi 185-uy</a>
+              </div>
+            </div>
+
+            <div class="contact__website__card">
+              <div class="contact__website__card__icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="contact__website__card__numbers">
+                <div class="contact__website__card__title contact__card__item__title">
+                  <h3>Website</h3>
+                </div>
+                <a href="#"> sardorbek0731.netlify.app</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="contact__form">
+          <form>
+            <div class="name__input contact__form__item">
+              <input type="text" required />
+              <label for="name">Ism</label>
+            </div>
+            <div class="email__input contact__form__item">
+              <input type="text" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="password__input contact__form__item">
+              <input type="password" required />
+              <label for="password">Parol</label>
+            </div>
+            <button type="button" class="contact__form__btn">
+              <a href="#"> Yuborish </a>
+            </button>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <!-- GOOGBYE  SECTION -->
+    <div class="goodbye">
+      <div class="goodbye__logotiv">
+        <h1>
+          <a href="index.html">
+            <i>S.<span>OLimov</span></i>
+          </a>
+        </h1>
+      </div>
+      <div class="website__map">
+        <a href="#home" class="nav-link">Bosh sahifa</a>
+        <a href="#about" class="nav-link">Men haqimda</a>
+        <a href="#skills" class="nav-link">Mahorat</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Aloqa</a>
+        </li>
+        </ul>
+      </div>
+      <div class="admin__icon">
+        <a href="#">
+          <i class="fa-solid fa-paper-plane"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/sardorbek0731" target="blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

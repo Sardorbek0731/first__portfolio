@@ -1,0 +1,363 @@
+/* Telefon */
+
+@media only screen and (max-width: 576px) {
+  ::-webkit-scrollbar {
+    width: 0;
+}
+
+
+  .hr {
+    width: 300px;
+  }
+  @keyframes hr {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 150px;
+      width: 10px;
+    }
+  }
+  nav {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 5px;
+    z-index: 30;
+    align-items: center;
+  }
+
+  .nav {
+    position: fixed;
+    left: -100%;
+    transition: all 1s;
+    background-color: #fff;
+    width: 75%;
+    height: 100vh;
+    z-index: 30;  
+    top: 0;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li {
+    display: block;
+    line-height: 40px;
+  }
+  .nav-item .nav-link:hover {
+    margin-top: 0;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ .checkBtn {
+    color: red;
+  }
+  .checkBtn {
+    display: flex;
+    position: relative;
+    z-index: 50;
+    top: 10%;
+    color: #ffa200;
+  }
+  .nav-item .nav-link {
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .nav-item .nav-link:hover {
+    margin-top: 0;
+  }
+  .nav-item .active {
+    margin-top: 0;
+    color: #000;
+  }
+
+
+  .animation__name {
+    height: 30px;
+    margin: 20px 0;
+  }
+  .ismim {
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .animation__name h1 {
+    font-size: 27px;
+  }
+  @keyframes animation__name {
+    0% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: -45px;
+    }
+    50% {
+      margin-top: -90px;
+    }
+    75% {
+      margin-top: -45px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  .about__items {
+    flex-direction: column;
+  }
+  .about__item__img {
+    left: 40px;
+  }
+  .about__item__paragraph {
+    margin-bottom: 60px;
+  }
+  .about__item__paragraph p {
+    font-size: 13px;
+    margin: 30px 0;
+  }
+  .card__items {
+    flex-flow: column;
+  }
+  .first__card,
+  .second__card {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .skills__item__education {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  } 
+  .skills__education {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .skills__item {
+    justify-content: center;
+    padding: 30px 10px;
+    width: 320px;
+  }
+  .html__skill__item, .css__skill__item, .bootstrap__skill__item, 
+  .js__skill__item {
+    width: 280px;
+  }
+  .teacher__items__card {
+    flex-flow: column;
+    align-items: center;
+  }
+  .first__teacher__item,
+  .second__teacher__item {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .portfolio__row {
+    flex-flow: column;
+  }
+  .website__item {
+    width: 270px;
+  }
+  .website__item img {
+    width: 270px;
+    height: 170px;
+  }
+  .portfolio__first__website,
+  .portfolio__three__website {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .portfolio__link a {
+    margin-right: 15px;
+  }
+  .contact__card__and__form {
+    flex-flow: column;
+  }
+  .first__contact__card__row {
+    flex-flow: column;
+  }
+  .second__contact__card__row {
+    flex-flow: column;
+  }
+  .contact__phon__card,
+  .contact__addres__card {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .contact__card {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .contact__form {
+    padding: 70px 90px;
+  }
+  .contact__form:hover {
+    transform: translateY(0);
+  }
+  .website__map a {
+    font-size: 10px;
+    margin-right: 9px;
+  }
+}
+
+
+/*  Noutbook  */
+
+@media only screen and (min-width: 1300px) {
+  nav {
+    height: 100px;
+  }
+  .logo h1 {
+      font-size: 55px;
+  }
+  .logo span {
+      font-size: 44px;
+  }
+  .nav-item .nav-link {
+      font-size: 15px;
+  }
+  .ismim h4 {
+      font-size: 25px;
+  }
+  .ismim h5 {
+      font-size: 25px;
+  }
+  .animation__name {
+      margin: 20px 0;
+  }
+  .web__designer {
+      font-size: 29px;
+  }
+  .animation__name h1 {
+      font-size: 45px;
+  }
+  @keyframes animation__name {
+      0% {
+          margin-top: 0;
+      }
+      25% {
+          margin-top: -60px;
+      }
+      50% {
+          margin-top: -110px;
+      }
+      75% {
+          margin-top: -60px;
+      }
+      100% {
+          margin-top: 0;
+      }
+  }
+  .about__title h1 {
+      font-size: 55px;
+  }
+  .about__item__img  {
+      width: 320px;
+      height: 430px;
+  }
+  .about__item__img img {
+      width: 320px;
+      height: 430px;
+  }
+  .about__item__paragraph h4 {
+      font-size: 34px;
+  }
+  .about__item__paragraph p {
+      font-size: 22px;
+  }
+  .first__card, .second__card, .three__card {
+      width: 300px;
+      max-height: 250px;
+      padding-top: 75px;
+  }
+  .about__card__item:hover {
+      max-height: 400px;
+  }
+  .about__card__item i {
+      font-size:  100px;
+      color: #67b0d1;
+  }
+  .about__card__h4 {
+      font-size: 28px;
+  }
+  .card_paragrap {
+      font-size: 20px;
+  }
+  .skills__title h1 {
+      font-size: 55px;
+  }
+  .js__skill__item {
+      width: 380px;
+  }
+  .html__skill__item, .css__skill__item, .bootstrap__skill__item {
+      width: 380px;
+  }
+  .html__skills__icon i, .css__skills__icon i, .js__skills__icon i, .bootstrap__skills__icon i{
+      font-size: 50px;
+  }
+  .skills__item__header h6 {
+      font-size: 22px;
+  }
+  .portfolio__title__bg {
+      height: 500px;
+  }
+  .portfolio__title h1 { 
+      font-size: 55px;
+  }
+  .portfolio__row__first {
+      margin-bottom: 150px;
+  }
+  .portfolio__link a {
+      font-size: 23px;
+      padding: 25px 15px;
+  }
+  .website__item {
+      width: 500px;
+  }
+  .portfolio__first__website img, .portfolio__second__website img, 
+  .portfolio__three__website img, .portfolio__four__website img {
+      height: 340px;
+  }
+  .contact__title h1 {
+      font-size: 55px;
+  }
+  .contact__phon__card, .contact__email__card, .contact__addres__card,
+  .contact__website__card {
+      width: 250px;
+      height: 210px;
+  }
+  .contact__phon__card__icon, .contact__email__card__icon, 
+  .contact__addres__card__icon, .contact__website__card__icon {
+      width: 60px;
+      height: 60px;
+  }
+  .contact__phon__card__icon i, .contact__email__card__icon i , 
+  .contact__addres__card__icon i, .contact__website__card__icon i {
+      font-size: 20px;
+  }
+  .contact__card__item__title h3 {
+      font-size: 24px;
+      margin: 10px 0;
+  }
+  .contact__phon__card__numbers a, .contact__email__card__numbers a,
+  .contact__addres__card__numbers a, .contact__website__card__numbers a {
+      font-size: 18px;
+  }
+  .contact__form {
+      width: 370px;
+  }
+  .goodbye {
+      height: 300px;
+  }
+  .goodbye__logotiv h1 a {
+      font-size: 57px;
+  }
+  .goodbye__logotiv span {
+      font-size: 48px;
+  }
+  .website__map a {
+      font-size: 15px;
+  }
+  .website__map {
+      margin: 30px 0;
+  }
+}
