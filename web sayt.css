@@ -909,7 +909,7 @@ nav .nav {
 .portfolio__first__website img, .portfolio__second__website img, 
 .portfolio__three__website img, .portfolio__four__website img {
     width: 100%;
-    height: 270px;
+    height: 100%;
 }
 .portfolio__four__website {
     margin-right: 0;
@@ -1111,12 +1111,12 @@ nav .nav {
     outline: none;  
     font-size: 18px;
     font-weight: 250;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     width: 100%;
     transition: all 1s ease;
     position: relative;
     left: 0;
-    margin: 6px 0;
+    margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
 }
 .name__input label, .email__input label, .password__input label {
