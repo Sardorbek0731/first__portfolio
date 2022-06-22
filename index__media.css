@@ -29,25 +29,24 @@
   .nav {
     position: fixed;
     left: -100%;
+    top: 5vh;
     transition: all 1s;
-    background-color: #fff;
-    width: 75%;
-    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.98);
+    box-shadow: 0 0 15px 0 rgb(68 88 144 / 20%);
+    width: 80%;
+    height: 90vh;
     z-index: 30;
-    top: 0;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
   }
   nav ul li {
     display: block;
-    line-height: 40px;
-  }
-  .nav-item .nav-link:hover {
-    margin-top: 0;
+    line-height: 50px;
   }
   #check:checked ~ ul {
-    left: 0;
+    left: 10%;
   }
   #check:checked ~ .checkBtn {
     color: red;
@@ -65,6 +64,9 @@
   }
   .nav-item .nav-link:hover {
     margin-top: 0;
+  }
+  .nav-item .nav-link::before {
+    bottom: 3px;
   }
   .nav-item .active {
     margin-top: 0;
@@ -156,9 +158,6 @@
   }
   .website__item {
     width: 270px;
-  }
-  .website__item img {
-    width: 270px;
     height: 170px;
   }
   .portfolio__first__website,
@@ -166,8 +165,20 @@
     margin-right: 0;
     margin-bottom: 50px;
   }
-  .portfolio__link a {
-    margin-right: 15px;
+  .portfolio__overlay__linkedin {
+    left: 17px;
+  }
+  .portfolio__website__link,
+  .portfolio__sign__in {
+    width: 35px;
+    height: 35px;
+  }
+  .overlay__item a i {
+    font-size: 17px;
+  }
+  .portfolio__overlay__title {
+    font-size: 17px;
+    left: 17px;
   }
   .contact__card__and__form {
     flex-flow: column;
@@ -256,12 +267,12 @@
     font-size: 55px;
   }
   .about__item__img {
-    width: 320px;
-    height: 430px;
+    width: 300px;
+    height: 400px;
   }
   .about__item__img img {
-    width: 320px;
-    height: 430px;
+    width: 100%;
+    height: 100%;
   }
   .about__item__paragraph h4 {
     font-size: 34px;
@@ -272,9 +283,9 @@
   .first__card,
   .second__card,
   .three__card {
-    width: 300px;
-    max-height: 250px;
-    padding-top: 75px;
+    width: 290px;
+    max-height: 230px;
+    padding-top: 65px;
   }
   .about__card__item:hover {
     max-height: 400px;
@@ -287,7 +298,7 @@
     font-size: 28px;
   }
   .card_paragrap {
-    font-size: 20px;
+    font-size: 19px;
   }
   .skills__title h1 {
     font-size: 55px;
