@@ -48,15 +48,39 @@
   #check:checked ~ ul {
     left: 10%;
   }
-  #check:checked ~ .checkBtn {
-    color: red;
+  #check:checked ~ .checkBtn .nav__collapase__item {
+    background-color: red;
+  }
+  #check:checked ~ .checkBtn .three__collapse__item {
+    display: none;
+  }
+  #check:checked ~ .checkBtn .first__collapse__item {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+  }
+  #check:checked ~ .checkBtn .second__collapse__item {
+    transform: rotate(-45deg);
+    margin-bottom: 0;
   }
   .checkBtn {
     display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    z-index: 50;
-    top: 10%;
-    color: #ffa200;
+    z-index: 100;
+  }
+  .nav__collapase__item {
+    height: 4px;
+    width: 32px;
+    background-color: #ffa200;
+    position: relative;
+  }
+  .first__collapse__item {
+    margin-bottom: 8px;
+  }
+  .second__collapse__item {
+    margin-bottom: 8px;
   }
   .nav-item .nav-link {
     margin-right: 0;
