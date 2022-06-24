@@ -1200,10 +1200,10 @@ nav .nav {
   font-size: 11px;
 }
 .contact__form__item input:focus {
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
 }
 .contact__form__item input:valid {
-  border-bottom: 1px solid #119d52;
+  border-bottom: 2чpx solid #119d52;
 }
 .contact__form__btn {
   border: none;
