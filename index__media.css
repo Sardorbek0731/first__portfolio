@@ -355,6 +355,26 @@
   .skills__item__header h6 {
     font-size: 22px;
   }
+  .first__teacher__item,
+  .second__teacher__item,
+  .three__teacher__item {
+    width: 350px;
+  }
+  .first__teacher__item__img img,
+  .second__teacher__item__img img,
+  .teacher__img img {
+    height: 450px;
+  }
+  .first__teacher__item__p p,
+  .second__teacher__item__p p {
+    font-size: 24px;
+  }
+  .teacher__img:hover .teacher__overlay {
+    height: 450px;
+  }
+  .teacher__item__title h1 {
+    font-size: 40px;
+  }
   .portfolio__title__bg {
     height: 500px;
   }

@@ -786,7 +786,7 @@ nav .nav {
 }
 .teacher__img:hover .teacher__overlay {
   background-color: #123958a8;
-  height: 350px;
+  height: 10;
 }
 .teacher__img:hover .teacher__overlay a {
   display: inline-block;
