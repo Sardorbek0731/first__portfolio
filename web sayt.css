@@ -5,6 +5,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 body {
   color: white;
@@ -74,7 +75,7 @@ nav .nav {
   display: none;
 }
 .checkBtn {
-  font-size: 30px;
+  font-size: 1.8rem;
   cursor: pointer;
   display: none;
 }
@@ -83,20 +84,20 @@ nav .nav {
   text-decoration: none;
 }
 .logo h1 {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 400;
   color: #000;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .logo span {
-  font-size: 34px;
+  font-size: 2.1rem;
   color: #ffa200;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 .nav-item .nav-link {
   display: flex;
-  font-size: 13px;
+  font-size: 0.75rem;
   font-weight: 450;
   color: #ffa200;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -179,7 +180,7 @@ nav .nav {
 .ismim h4 {
   text-transform: uppercase;
   color: #000;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 300;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -187,7 +188,7 @@ nav .nav {
   text-transform: uppercase;
   color: #000;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 1.3rem;
   margin-bottom: 15px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -199,7 +200,7 @@ nav .nav {
 }
 .animation__name h1 {
   color: #123858;
-  font-size: 55px;
+  font-size: 2.8rem;
   font-weight: 300;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none;
@@ -211,7 +212,7 @@ nav .nav {
 .junior__dev {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 1.3rem;
   margin-bottom: 30px;
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -219,7 +220,7 @@ nav .nav {
 .web__designer {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 1.3rem;
   margin-bottom: 0;
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -276,7 +277,7 @@ nav .nav {
 }
 .about__title h1 {
   color: rgb(0, 0, 0);
-  font-size: 40px;
+  font-size: 2.8rem;
   font-weight: 300;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center !important;
@@ -302,8 +303,8 @@ nav .nav {
 }
 .about__item__img {
   position: relative;
-  width: 250px;
-  height: 350px;
+  width: 15rem;
+  height: 21rem;
   align-items: center;
   margin-right: 70px;
   border: 5px solid #01cafe;
@@ -312,8 +313,8 @@ nav .nav {
   position: absolute;
   top: -30px;
   left: 30px;
-  width: 250px;
-  height: 350px;
+  width: 15rem;
+  height: 21rem;
   transition: all 2s ease;
 }
 .about__item__paragraph {
@@ -322,7 +323,7 @@ nav .nav {
 .about__item__paragraph h4 {
   text-transform: uppercase;
   color: black;
-  font-size: 26px;
+  font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 10px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -333,7 +334,7 @@ nav .nav {
 }
 .about__item__paragraph p {
   color: #4f4f4fdb;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
@@ -352,8 +353,8 @@ nav .nav {
   margin-right: 50px;
 }
 .about__card__item {
-  width: 250px;
-  max-height: 200px;
+  width: 15rem;
+  max-height: 12.5rem;
   padding-top: 50px;
   padding-bottom: 5px;
   background-color: #fff;
@@ -381,11 +382,11 @@ nav .nav {
 }
 .about__card__item:hover {
   transform: translateY(0);
-  max-height: 350px;
+  max-height: 21rem;
 }
 .about__card__item i {
   position: relative;
-  font-size: 95px;
+  font-size: 5.9rem;
   color: #67b0d1;
   cursor: pointer;
 }
@@ -395,14 +396,14 @@ nav .nav {
 .about__card__h4 {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  font-size: 22px;
+  font-size: 1.3rem;
   font-family: sans-serif;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 .card_paragrap {
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 1rem;
   margin: 20px 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -448,17 +449,17 @@ nav .nav {
   align-items: center;
   justify-content: center;
   color: rgb(43, 5, 61);
-  font-size: 22px;
+  font-size: 1.3rem;
   margin-right: 10px;
   border: 2px dashed #67b0d1;
-  width: 50px;
-  height: 50px;
+  width: 3.1rem;
+  height: 3.1rem;
   border-radius: 50%;
 }
 .education__title h1,
 .developer__title h1 {
   color: rgb(43, 5, 61);
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -468,7 +469,7 @@ nav .nav {
   text-align: left;
   line-height: 30px;
   margin-left: 20px;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -480,7 +481,7 @@ nav .nav {
 }
 .skills__title h1 {
   color: rgb(0, 0, 0);
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 300;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center !important;
@@ -503,7 +504,7 @@ nav .nav {
   display: flex;
   flex-flow: column;
   padding: 30px 30px;
-  width: 400px;
+  width: 25rem;
   background-color: white;
   border: 2px dashed #67b0d1;
 }
@@ -569,7 +570,7 @@ nav .nav {
 }
 .skills__item__header h6 {
   color: black;
-  font-size: 17px;
+  font-size: 1.06rem;
   margin-bottom: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -664,7 +665,7 @@ nav .nav {
   margin-top: 100px;
 }
 .teacher__item__title h1 {
-  font-size: 30px;
+  font-size: 1.8rem;
   color: rgb(43, 5, 61);
   padding-left: 40px;
   margin-bottom: 100px;
@@ -678,7 +679,7 @@ nav .nav {
 .first__teacher__item,
 .second__teacher__item,
 .three__teacher__item {
-  width: 280px;
+  width: 17.5rem;
   box-shadow: 0px 2px 12px rgb(36, 36, 36);
   transition: all 1s ease;
   margin-right: 50px;
@@ -694,7 +695,7 @@ nav .nav {
 }
 .first__teacher__item__p p,
 .second__teacher__item__p p {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   color: #000;
   margin: 12px 0;
@@ -705,17 +706,17 @@ nav .nav {
 .first__teacher__item__img img {
   width: 100%;
   border-radius: 14px;
-  height: 350px;
+  height: 21.8rem;
 }
 .second__teacher__item__img img {
   width: 100%;
   border-radius: 14px;
-  height: 350px;
+  height: 21.8rem;
 }
 
 .teacher__img img {
   position: relative;
-  height: 350px;
+  height: 21.8rem;
 }
 .teacher__overlay {
   position: absolute;
@@ -736,12 +737,12 @@ nav .nav {
 }
 .teacher__overlay a h1 {
   color: white;
-  font-size: 120px;
+  font-size: 7.5rem;
   font-weight: 50;
 }
 .teacher__img:hover .teacher__overlay {
   background-color: #123958a8;
-  height: 350px;
+  height: 21.8rem;
 }
 .teacher__img:hover .teacher__overlay a {
   display: inline-block;
@@ -758,14 +759,14 @@ nav .nav {
   position: absolute;
   background: linear-gradient(to right, #01cafe, #ffffff00);
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
   top: 0;
   z-index: -1;
 }
 .portfolio__title h1 {
   margin: 100px auto;
   text-align: center;
-  font-size: 45px;
+  font-size: 2.8rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(0, 0, 0);
   font-weight: 300;
@@ -842,7 +843,7 @@ nav .nav {
   bottom: -50%;
   left: 30px;
   transition: all 1.4s ease;
-  font-size: 22px;
+  font-size: 1.3rem;
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -862,7 +863,7 @@ nav .nav {
 }
 .overlay__item a i {
   color: white;
-  font-size: 17px;
+  font-size: 1.06rem;
 }
 .portfolio__first__website:hover .overlay,
 .portfolio__second__website:hover .overlay,
@@ -878,9 +879,9 @@ nav .nav {
 }
 .website__item {
   transition: all 1s ease-in;
-  width: 400px;
+  width: 25rem;
   box-shadow: 0 0 20px rgb(131, 131, 131);
-  height: 270px;
+  height: 16.8rem;
   position: relative;
   overflow: hidden;
 }
@@ -908,7 +909,7 @@ nav .nav {
 }
 
 .contact__title h1 {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 300;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 100px auto;
@@ -972,8 +973,8 @@ nav .nav {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 160px;
+  width: 12.5rem;
+  height: 10rem;
   background: linear-gradient(
     130deg,
     rgba(49, 110, 170, 0.527),
@@ -1006,8 +1007,8 @@ nav .nav {
 .contact__website__card__icon::before {
   content: "";
   position: absolute;
-  width: 37px;
-  height: 37px;
+  width: 2.3rem;
+  height: 2.3rem;
   border-top-left-radius: 14px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 14px;
@@ -1053,8 +1054,8 @@ nav .nav {
   justify-content: center;
   align-items: center;
   align-self: center;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   transition: all 0.5s ease;
   border-top-left-radius: 14px;
   border-top-right-radius: 7px;
@@ -1082,7 +1083,7 @@ nav .nav {
 .contact__website__card__numbers a {
   color: #f8f8f8;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -1092,7 +1093,7 @@ nav .nav {
   align-items: center;
   justify-content: center;
   padding: 0 90px;
-  width: 300px;
+  width: 18.75rem;
   background-color: white;
   border-top: 2px solid #074888;
   border-left: 2px solid #074888;
@@ -1121,7 +1122,7 @@ nav .nav {
 .password__input input {
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 250;
   border-bottom: 2px solid #000;
   width: 100%;
@@ -1140,19 +1141,19 @@ nav .nav {
   left: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 0.93rem;
   color: black;
   font-weight: 300;
 }
 .contact__form__item input:focus ~ label {
   margin-top: -12px;
   color: red;
-  font-size: 11px;
+  font-size: 0.6rem;
 }
 .contact__form__item input:valid ~ label {
   margin-top: -12px;
   color: #119d52;
-  font-size: 11px;
+  font-size: 0.6rem;
 }
 .contact__form__item input:focus {
   border-bottom: 2px solid red;
@@ -1163,8 +1164,8 @@ nav .nav {
 .contact__form__btn {
   border: none;
   outline: none;
-  width: 140px;
-  height: 40px;
+  width: 8.75rem;
+  height: 2.5rem;
   background: linear-gradient(to right, #01cafe, rgb(57, 57, 255));
   position: relative;
   box-shadow: 0 0 20px #797979;
@@ -1174,6 +1175,7 @@ nav .nav {
   color: rgb(0, 0, 0);
   text-decoration: none;
   position: relative;
+  font-size: 0.8rem;
 }
 .contact__form__btn::before {
   content: "";
@@ -1203,17 +1205,17 @@ nav .nav {
   align-items: center;
   justify-content: center;
   background-color: #074888;
-  height: 300px;
+  height: 18.75rem;
 }
 .goodbye__logotiv h1 a {
   text-decoration: none;
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 400;
   color: #fff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .goodbye__logotiv span {
-  font-size: 34px;
+  font-size: 2.1rem;
   color: #ffa200;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -1223,7 +1225,7 @@ nav .nav {
   margin: 40px 0;
 }
 .website__map a {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: #fff;
   font-family: sans-serif;

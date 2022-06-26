@@ -1,5 +1,17 @@
 /* Planshet */
 @media only screen and (max-width: 768px) {
+  .hr {
+    width: 450px;
+  }
+  @keyframes hr {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 300px;
+      width: 10px;
+    }
+  }
   nav {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.2);
@@ -43,7 +55,7 @@
   #check:checked ~ .checkBtn .second__collapse__item {
     transform: rotate(-45deg);
     margin-bottom: 0;
-    margin-top: -3px;
+    margin-top: -4px;
   }
   .checkBtn {
     display: flex;
@@ -77,6 +89,9 @@
   .nav-item .active {
     margin-top: 0;
     color: #000;
+  }
+  .ismim {
+    margin-right: 0;
   }
 }
 
@@ -243,17 +258,11 @@
 /*  Noutbook  */
 
 @media only screen and (min-width: 1300px) {
+  html {
+    font-size: 22px;
+  }
   nav {
     height: 100px;
-  }
-  .logo h1 {
-    font-size: 55px;
-  }
-  .logo span {
-    font-size: 44px;
-  }
-  .nav-item .nav-link {
-    font-size: 15px;
   }
   .ismim h4 {
     font-size: 28px;
@@ -293,164 +302,27 @@
       margin-top: 0;
     }
   }
-  .about__title h1 {
-    font-size: 55px;
-  }
-  .about__item__img {
-    width: 300px;
-    height: 400px;
-  }
-  .about__item__img img {
-    width: 100%;
-    height: 100%;
-  }
-  .about__item__paragraph h4 {
-    font-size: 34px;
-  }
-  .about__item__paragraph p {
-    font-size: 22px;
-  }
   .first__card,
   .second__card,
   .three__card {
-    width: 290px;
-    max-height: 230px;
-    padding-top: 65px;
+    width: 14.5rem;
+    max-height: 12rem;
+    padding-top: 60px;
+    padding-bottom: 5px;
   }
   .about__card__item:hover {
-    max-height: 400px;
+    max-height: 27rem;
   }
   .about__card__item i {
-    font-size: 100px;
-    color: #67b0d1;
+    font-size: 5.9rem;
   }
   .about__card__h4 {
-    font-size: 28px;
+    font-size: 1.3rem;
   }
   .card_paragrap {
-    font-size: 19px;
-  }
-  .skills__title h1 {
-    font-size: 55px;
-  }
-  .skills__item {
-    width: 470px;
-  }
-  .js__skill__item {
-    width: 380px;
-  }
-  .html__skill__item,
-  .css__skill__item,
-  .bootstrap__skill__item,
-  .github__skill__item {
-    width: 380px;
-  }
-  .html__skills__icon i,
-  .css__skills__icon i,
-  .js__skills__icon i,
-  .bootstrap__skills__icon i,
-  .github__skill__icon i {
-    font-size: 50px;
-  }
-  .skills__item__header h6 {
-    font-size: 22px;
-  }
-  .first__teacher__item,
-  .second__teacher__item,
-  .three__teacher__item {
-    width: 350px;
-  }
-  .first__teacher__item__img img,
-  .second__teacher__item__img img,
-  .teacher__img img {
-    height: 450px;
-  }
-  .first__teacher__item__p p,
-  .second__teacher__item__p p {
-    font-size: 24px;
-  }
-  .teacher__img:hover .teacher__overlay {
-    height: 450px;
-  }
-  .teacher__item__title h1 {
-    font-size: 40px;
-  }
-  .portfolio__title__bg {
-    height: 500px;
-  }
-  .portfolio__title h1 {
-    font-size: 55px;
-  }
-  .portfolio__row__first {
-    margin-bottom: 50px;
-  }
-  .portfolio__link a {
-    font-size: 20px;
-    padding: 25px 15px;
-  }
-  .portfolio__overlay__title {
-    font-size: 28px;
-  }
-  .website__item {
-    width: 500px;
-    height: 350px;
-  }
-  .contact__title h1 {
-    font-size: 55px;
-  }
-  .contact__phon__card,
-  .contact__email__card,
-  .contact__addres__card,
-  .contact__website__card {
-    width: 250px;
-    height: 210px;
-  }
-  .contact__phon__card__icon,
-  .contact__email__card__icon,
-  .contact__addres__card__icon,
-  .contact__website__card__icon {
-    width: 50px;
-    height: 50px;
-  }
-  .contact__phon__card__icon i,
-  .contact__email__card__icon i,
-  .contact__addres__card__icon i,
-  .contact__website__card__icon i {
-    font-size: 20px;
-  }
-  .contact__phon__card__icon::before,
-  .contact__email__card__icon::before,
-  .contact__addres__card__icon::before,
-  .contact__website__card__icon::before {
-    width: 50px;
-    height: 50px;
-  }
-  .contact__card__item__title h3 {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-  .contact__phon__card__numbers a,
-  .contact__email__card__numbers a,
-  .contact__addres__card__numbers a,
-  .contact__website__card__numbers a {
-    font-size: 18px;
+    font-size: 0.96rem;
   }
   .contact__form {
-    width: 370px;
-  }
-  .goodbye {
-    height: 300px;
-  }
-  .goodbye__logotiv h1 a {
-    font-size: 57px;
-  }
-  .goodbye__logotiv span {
-    font-size: 48px;
-  }
-  .website__map a {
-    font-size: 15px;
-  }
-  .website__map {
-    margin: 30px 0;
+    padding: 0 110px;
   }
 }
