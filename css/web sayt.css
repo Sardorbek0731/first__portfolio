@@ -271,7 +271,8 @@ nav .nav {
 
 /*-------- ABOUT ME --------*/
 .about {
-  margin: 100px 0;
+  padding-top: 100px;
+  margin-bottom: 100px;
   flex-flow: column;
   text-align: center !important;
 }
@@ -376,9 +377,15 @@ nav .nav {
   background-color: #67b0d1;
   height: 100%;
 }
-
+.about__card__up svg {
+  color: #67b0d1;
+}
+.about__card__item:hover .about__card__up svg {
+  color: white;
+  transform: rotate(-180deg);
+}
 .about__card__body {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .about__card__item:hover {
   transform: translateY(0);
@@ -389,6 +396,7 @@ nav .nav {
   font-size: 5.9rem;
   color: #67b0d1;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 .about__card__item:hover i {
   color: white;
@@ -476,6 +484,7 @@ nav .nav {
 
 .skills {
   padding-top: 100px;
+  margin-bottom: 100px;
   flex-flow: column;
   text-align: center !important;
 }
