@@ -259,7 +259,7 @@
 
 @media only screen and (min-width: 1300px) {
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
   nav {
     height: 100px;
@@ -305,8 +305,8 @@
   .first__card,
   .second__card,
   .three__card {
-    width: 14.5rem;
-    max-height: 12rem;
+    width: 15rem;
+    max-height: 12.5rem;
     padding-top: 60px;
     padding-bottom: 5px;
   }
@@ -324,5 +324,11 @@
   }
   .contact__form {
     padding: 0 110px;
+  }
+  .skill__item__header__and__body {
+    width: 60%;
+  }
+  .skills__item {
+    padding: 30px 40px;
   }
 }

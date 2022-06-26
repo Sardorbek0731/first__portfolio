@@ -543,7 +543,7 @@ nav .nav {
   margin-right: 30px;
 }
 .skills__item__icon i {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .html__skills__icon i {
   color: orange;
@@ -553,6 +553,7 @@ nav .nav {
 }
 .bootstrap__skills__icon i {
   color: rgb(136, 0, 255);
+  font-size: 2.4rem;
 }
 .github__skills__icon i {
   color: #000;
