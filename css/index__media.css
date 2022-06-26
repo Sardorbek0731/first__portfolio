@@ -1,5 +1,8 @@
 /* Planshet */
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
   .hr {
     width: 450px;
   }
@@ -8,7 +11,7 @@
       left: 0;
     }
     100% {
-      left: 300px;
+      left: 240px;
       width: 10px;
     }
   }
@@ -93,11 +96,69 @@
   .ismim {
     margin-right: 0;
   }
+  .about__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__item__img {
+    margin-right: 0;
+    margin-top: 50px;
+  }
+  .card__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first__card,
+  .second__card {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .skills__item__education {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills__education {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .teacher__items__card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first__teacher__item,
+  .second__teacher__item {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .contact__card__and__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__card {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .contact__form {
+    padding: 60px 90px;
+  }
+  .portfolio__row {
+    flex-direction: column;
+  }
+  .portfolio__first__website,
+  .portfolio__three__website {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
 }
 
 /* Telefon */
 
 @media only screen and (max-width: 576px) {
+  html {
+    font-size: 16px;  
+  }
   ::-webkit-scrollbar {
     width: 0;
   }
@@ -152,7 +213,7 @@
     flex-direction: column;
   }
   .about__item__img {
-    left: 40px;
+    left: 0;
   }
   .about__item__paragraph {
     margin-bottom: 60px;
@@ -161,22 +222,10 @@
     font-size: 13px;
     margin: 30px 0;
   }
-  .card__items {
-    flex-flow: column;
-  }
-  .first__card,
-  .second__card {
-    margin-right: 0;
-    margin-bottom: 50px;
-  }
   .skills__item__education {
     display: flex;
     flex-flow: column;
     align-items: center;
-  }
-  .skills__education {
-    margin-right: 0;
-    margin-bottom: 50px;
   }
   .skills__item {
     justify-content: center;
@@ -238,13 +287,6 @@
   .contact__addres__card {
     margin-right: 0;
     margin-bottom: 50px;
-  }
-  .contact__card {
-    margin-right: 0;
-    margin-bottom: 50px;
-  }
-  .contact__form {
-    padding: 70px 90px;
   }
   .contact__form:hover {
     transform: translateY(0);
